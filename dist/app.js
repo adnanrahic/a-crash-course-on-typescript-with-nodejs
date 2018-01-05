@@ -19,7 +19,7 @@ class App {
                 message: 'Hello World!'
             });
         });
-        router.post('/', function (req, res) {
+        router.post('/', (req, res) => {
             const data = req.body;
             // query a database and save data
             res.status(200).send(data);
